@@ -1,259 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Manisha Umesh Panigrahy - Portfolio</title>
-  <!-- Google Fonts: Montserrat (headings) & Open Sans (body) -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assests/favicon.png">
+
+    <title>Manisha's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <!-- Devicon for brand logos -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-  <header class="header">
-    <div class="container header-container">
-      <a href="#hero" class="logo">Manisha Umesh Panigrahy</a>
-      <nav class="nav">
-        <ul class="nav-menu">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#activities">Activities</a></li>
-          <li><a href="#connect">Connect</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-          <span class="hamburger"></span>
-        </button>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section id="hero" class="section hero">
-      <div class="container hero-content">
-        <img src="Manisha_Panigrahy_Formal_Image.png" alt="Manisha Umesh Panigrahy" class="profile-image" />
-        <h1 class="hero-title">MANISHA UMESH PANIGRAHY</h1>
-        <p class="hero-tagline">Fresher | Full Stack Developer | Java / Python & Web Technologies</p>
-        <p class="hero-contact-info">
-            <span><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra / India</span>
-            <!-- <span><i class="fas fa-phone"></i> 9967035464</span> -->
-            <span><i class="fas fa-envelope"></i> manishapanigrahy313@gmail.com</span>
-        </p>
-        <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary hero-cta">Let's Connect</a>
-            <a href="Manisha_Panigrahy_Resume.pdf" download="Manisha_Panigrahy_Resume.pdf" class="btn btn-secondary hero-cta">
-                <i class="fas fa-download"></i> Download Resume
-            </a>
+    <div id="custom-cursor"></div>
+    <div>
+        <!-- ===== MOBILE NAVIGATION ===== -->
+        <div id="mobile-nav" class="mobile-nav">
+            <button id="close-menu-btn" class="close-menu-btn">&times;</button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-      </div>
-    </section>
 
-    <section id="about" class="section about">
-      <div class="container">
-        <h2 class="section-title">Summary</h2>
-        <p class="text-center hidden-on-load">
-          Recent M.Sc.IT candidate with a robust foundation in full-stack development, specializing in Java, Python, and modern web technologies. My academic journey has equipped me with practical skills in both front-end and back-end development, allowing me to design and implement comprehensive client-side and server-side logic.
-        </p>
-        <p class="text-center hidden-on-load">
-          I am a dedicated and motivated IT professional, holding a Bachelor's degree in IT and actively pursuing certifications in C, C++, Python, Java, HTML, CSS, JavaScript, Data Structures, and SQL. I am eager to secure a challenging Full Stack Developer role where I can contribute my technical abilities and continue to grow in a professional, dynamic setting.
-        </p>
-      </div>
-    </section>
+        <header id="main-header">
+            <div class="header-container">
+                <div id="email-icon-container" class="email-container">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <a class="email-text" href="mailto:manishapanigrahy313@gmail.com">manishapanigrahy313@gmail.com</a>
+                </div>
+                <div class="header-right">
+                    <nav class="desktop-nav">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about-me">About Me</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <button id="hamburger-menu" class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
 
-    <section id="skills" class="section skills-expertise">
-      <div class="container">
-        <h2 class="section-title">Technical Skills & Certifications</h2>
-        <div class="skills-details-container">
-            <div class="skill-group hidden-on-load">
-                <h3>Programming Languages & Technologies:</h3>
-                <p>C, C++, Python, HTML, CSS, JavaScript, Core Java, Advanced Java, Data Structures</p>
-            </div>
-            <div class="skill-group hidden-on-load">
-                <h3>Database Management:</h3>
-                <p>MySQL, SQL</p>
-            </div>
-            <div class="skill-group hidden-on-load">
-                <h3>Tools & Frameworks:</h3>
-                <p>Flask, BeautifulSoup, Selenium, Random Forest, LSTM (machine learning frameworks/tools as applicable)</p>
-            </div>
-            <div class="skill-group hidden-on-load">
-                <h3>Certifications:</h3>
-                <p>Java, Python, HTML/CSS/JS, C, C++, SQL & Data Structures – Pride Educare Mumbai, Maharashtra.</p>
-            </div>
-        </div>
-         <h3 class="sub-section-title hidden-on-load">Proficiency Highlights</h3>
-         <ul class="skill-levels hidden-on-load">
-           <li><span class="skill-name">Java</span><span class="skill-percentage">85%</span><div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div></li>
-           <li><span class="skill-name">Python</span><span class="skill-percentage">80%</span><div class="progress-bar"><div class="progress-fill" data-width="80%"></div></div></li>
-           <li><span class="skill-name">JavaScript</span><span class="skill-percentage">75%</span><div class="progress-bar"><div class="progress-fill" data-width="75%"></div></div></li>
-         </ul>
-      </div>
-    </section>
-
-    <section id="projects" class="section featured-projects">
-      <div class="container">
-        <h2 class="section-title">Academic Projects and Research</h2>
-        <div class="projects-catalog">
-          <div class="project-card hidden-on-load">
-            <h3 class="project-title">Library Management System (B.Sc. IT Project)</h3>
-            <p class="project-tech"><strong>Technology:</strong> PHP, MySQL, HTML, CSS, JavaScript, Bootstrap</p>
-            <div class="project-overview">
-                <h4>Overview:</h4>
-                <ul>
-                    <li>Developed a web-based library system with separate admin and user interfaces.</li>
-                    <li><strong>Admin panel:</strong> Handled book inventory, user management, and issue/return logs.</li>
-                    <li><strong>User panel:</strong> Enabled book search, issue request, and due date tracking.</li>
-                </ul>
-            </div>
-            <div class="project-links">
-                <a href="#" class="btn btn-secondary project-link disabled-link" aria-disabled="true" tabindex="-1">View Code (Soon)</a>
-            </div>
-          </div>
-
-          <div class="project-card hidden-on-load">
-            <h3 class="project-title">PriceWar Web Scraped Price Prediction (M.Sc. IT Project and Research Paper)</h3>
-            <p class="project-tech"><strong>Technology:</strong> Python, Flask, HTML, CSS, JavaScript, BeautifulSoup, Selenium, Matplotlib</p>
-            <div class="project-overview">
-                <h4>Overview:</h4>
-                <ul>
-                    <li>Developed a Flask-based backend for scraping and processing real-time product prices, Price history predicting future price.</li>
-                    <li><strong>Admin Panel:</strong> Add/manage products, fetch current prices from Amazon/Flipkart, and display prediction graphs, view product list, price chart, delete option.</li>
-                    <li><strong>User Side:</strong> Designed responsive UI using HTML/CSS/JS. Login/signup, search products, view real-time prices and detailed price comparison, history graph, and prediction chart.</li>
-                </ul>
-            </div>
-            <div class="research-paper-details">
-                <h4>Research Paper: Published in IJRASET</h4>
-                <p>Published a research paper analyzing ML models for accurate price prediction using real-time scraped data.</p>
-                <ul>
-                    <li><strong>Paper Title:</strong> PriceWar | <strong>Paper ID:</strong> IJRASET66915</li>
-                    <li><strong>ISSN:</strong> 2321-9653</li>
-                    <li><strong>Publish Date:</strong> 11 February 2025</li>
-                    <li><strong>DOI:</strong> 10.22214</li>
-                    <li><strong>URL:</strong> <a href="https://www.ijraset.com/best-journal/pricewar-778" target="_blank" rel="noopener noreferrer">https://www.ijraset.com/best-journal/pricewar-778</a></li>
-                </ul>
-            </div>
-            <div class="project-links">
-                <a href="https://www.ijraset.com/best-journal/pricewar-778" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-link">View Research Paper</a>
-                <a href="https://github.com/ManishaaPanigrahy/PriceWar" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-link">View Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section education-journey">
         <div class="container">
-          <h2 class="section-title">Qualifications</h2>
-          <div class="education-grid">
-            <div class="education-item hidden-on-load">
-              <h3>Kishinchand Chellaram College [ HSNCU University ]</h3>
-              <p class="education-degree">Masters of Science in Information Technology</p>
-              <p class="education-achievement">[9.85 CGPA]</p>
-              <p class="education-date-location">Aug 2023 - April 2025<br>Mumbai, Maharashtra</p>
-            </div>
-            <div class="education-item hidden-on-load">
-              <h3>Kirti M. Doongursee College [ University of Mumbai ]</h3>
-              <p class="education-degree">Bachelor of Science in Information Technology</p>
-              <p class="education-achievement">[9.12 CGPA]</p>
-              <p class="education-date-location">Aug 2020 – April 2023<br>Mumbai, Maharashtra</p>
-            </div>
-            <div class="education-item hidden-on-load">
-              <h3>Social Service League</h3>
-              <p class="education-degree">Higher Secondary Education</p>
-              <p class="education-achievement">[54.15%]</p>
-              <p class="education-date-location">Aug 2018 – Feb 2020<br>Mumbai, Maharashtra</p>
-            </div>
-            <div class="education-item hidden-on-load">
-              <h3>Vakola English School</h3>
-              <p class="education-degree">Secondary School Education</p>
-              <p class="education-achievement">[74.60%]</p>
-              <p class="education-date-location">Mar 2018<br>Mumbai, Maharashtra</p>
-            </div>
-          </div>
+            <!-- =========== 1. HERO SECTION =========== -->
+            <main id="home" class="hero-section">
+                <div class="avatar-container">
+                    <img src="assests/Profile_01.png" alt="Manisha's Profile Avatar">
+                </div>
+                <h1>Hi, I'm Manisha Panigrahy</h1>
+                <p class="main-headline">
+                    <span class="line-1">Crafting <span class="highlight">Dynamic</span></span>
+                    <span class="line-2"> Web Experiences &</span>
+                    <span class="line-3">Scalable Solutions.</span>
+                </p>    
+                <p>
+                    Full-Stack Developer with 1 year of experience creating responsive frontends and scalable backends. 
+                    Specializes in PHP (Laravel), WordPress, JavaScript, MySQL, and API integration.
+                </p>
+                <div class="hero-ctas" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; align-items: center;">
+                    <a href="#projects" class="cta-button">View My Work</a>
+                    <a href="assests/Manisha_Panigrahy_Resume.pdf" class="cta-button outline-button" download>Download Resume</a>
+                    <div class="social-links" style="display: flex; gap: 1rem; margin-left: 1rem; z-index: 2;">
+                        <a href="https://github.com/manishapanigrahy" target="_blank" style="color: var(--text-color); font-size: 1.5rem; position: relative;"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/manishapanigrahy" target="_blank" style="color: var(--text-color); font-size: 1.5rem; position: relative;"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:manishapanigrahy313@gmail.com" style="color: var(--text-color); font-size: 1.5rem; position: relative;"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </main>
         </div>
-      </section>
 
-    <section id="activities" class="section activities-section">
-      <div class="container">
-        <h2 class="section-title">Activities & Languages</h2>
-        <div class="activities-grid">
-            <div class="activity-item college-clubs hidden-on-load">
-                <h3>College Activities & Leadership</h3>
-                <div class="club-item">
-                    <h4>Systematic Chaos Tech Fest</h4>
-                    <p class="club-role">Organizing Committee, HSNC University | 2024</p>
-                    <p class="club-details">Contributed to administrative management and event coordination.</p>
-                </div>
-                <div class="club-item">
-                    <h4>AI Horizons International Conference</h4>
-                    <p class="club-role">Chief Guest Hospitality Lead | 2024</p>
-                    <p class="club-details">Managed hospitality for esteemed researchers.</p>
-                </div>
-                <div class="club-item">
-                    <h4>AI Horizons International Conference</h4>
-                    <p class="club-role">Research Paper Presenter | 2024</p>
-                    <p class="club-details">Authored and presented: "Ethical Frontiers in AI..."</p>
+        <!-- =========== 2. ABOUT ME SECTION =========== -->
+        <section id="about-me" class="about-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid" style="grid-template-columns: 1fr; max-width: 800px; text-align: center;">
+                <div class="about-text p-1">
+                    <p>
+                        1 year at Webzaa building 7+ production apps across real estate, PWA, and analytics. 
+                        I love turning client briefs into fast, scalable web products — from Laravel CMS to Next.js dashboards.
+                    </p>
                 </div>
             </div>
-            <div class="activity-item languages-list hidden-on-load">
-              <h3>Languages</h3>
-              <p>English, Hindi, Marathi, Oriya</p>
+        </section>
+
+        <!-- =========== 3. SKILLS SECTION =========== -->
+        <section id="skills" class="skills-section" style="padding-top: 0;">
+            <h2 class="section-title">Technical Skills</h2>
+            
+            <div class="project-tabs">
+                <button class="skill-tab-btn project-tab-btn active" data-filter="skills-backend">Backend</button>
+                <button class="skill-tab-btn project-tab-btn" data-filter="skills-frontend">Frontend</button>
+                <button class="skill-tab-btn project-tab-btn" data-filter="skills-tools">Tools & APIs</button>
             </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="connect" class="section connect-section">
-        <div class="container">
-          <h2 class="section-title">Connect With Me</h2>
-          <div class="connect-links">
-            <a href="https://www.linkedin.com/in/manisha-panigrahy-52527b2b9" target="_blank" rel="noopener noreferrer" class="connect-link hidden-on-load">
-              <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/ManishaaPanigrahy" target="_blank" rel="noopener noreferrer" class="connect-link hidden-on-load">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="mailto:manishapanigrahy313@gmail.com" class="connect-link hidden-on-load">
-              <i class="fas fa-envelope"></i> Email
-            </a>
-          </div>
-        </div>
-      </section>
+            <div class="skills-grid-grouped" style="max-width: 1000px; margin: 0 auto; min-height: 250px;">
+                <div class="skill-category skill-panel active" id="skills-backend">
+                    <div class="skills-wrapper">
+                        <div class="skill-card" style="--brand-color: #777BB4;"><i class="devicon-php-plain"></i><span>PHP / Laravel</span></div>
+                        <div class="skill-card" style="--brand-color: #339933;"><i class="devicon-nodejs-plain"></i><span>Node.js / Express</span></div>
+                        <div class="skill-card" style="--brand-color: #4479A1;"><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+                        <div class="skill-card" style="--brand-color: #000000;"><i class="fas fa-database"></i><span>Prisma / REST API</span></div>
+                    </div>
+                </div>
 
-    <section id="contact" class="section contact">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="text-center hidden-on-load">I'm excited to discuss potential collaborations, new projects, or opportunities. Feel free to reach out through the form below or my social channels.</p>
-        <form class="contact-form hidden-on-load" action="#" method="POST">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required placeholder="e.g, Manisha Umesh Panigrahy" />
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required placeholder="e.g, manishapanigrahy@gmail.com" />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-submit">Send Message <i class="fas fa-paper-plane"></i></button>
-        </form>
-      </div>
-    </section>
-  </main>
+                <div class="skill-category skill-panel" id="skills-frontend" style="display: none;">
+                    <div class="skills-wrapper">
+                        <div class="skill-card" style="--brand-color: #61DAFB;"><i class="devicon-react-original"></i><span>React / Next.js</span></div>
+                        <div class="skill-card" style="--brand-color: #F7DF1E;"><i class="devicon-javascript-plain"></i><span>JavaScript / jQuery</span></div>
+                        <div class="skill-card" style="--brand-color: #E34F26;"><i class="devicon-html5-plain"></i><span>HTML5 / CSS3</span></div>
+                        <div class="skill-card" style="--brand-color: #88CE02;"><i class="fas fa-layer-group"></i><span>GSAP / AJAX</span></div>
+                    </div>
+                </div>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© <script>document.write(new Date().getFullYear())</script> Manisha Umesh Panigrahy. All Rights Reserved.</p>
-      <p>Designed & Developed with Passion.</p>
+                <div class="skill-category skill-panel" id="skills-tools" style="display: none;">
+                    <div class="skills-wrapper">
+                        <div class="skill-card" style="--brand-color: #21759B;"><i class="devicon-wordpress-plain"></i><span>WordPress / ACF</span></div>
+                        <div class="skill-card" style="--brand-color: #F05032;"><i class="devicon-git-plain"></i><span>Git / AWS</span></div>
+                        <div class="skill-card" style="--brand-color: #FF6C37;"><i class="fab fa-google"></i><span>Google Ads API</span></div>
+                        <div class="skill-card" style="--brand-color: #000000;"><i class="fas fa-chart-bar"></i><span>Highcharts</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== 4. EXPERIENCE SECTION =========== -->
+        <section id="experience" class="experience-section">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-card">
+                <div class="experience-container">
+                    <div class="experience-tabs">
+                        <button class="tab-btn active" data-tab="webzaa">Webzaa</button>
+                    </div>
+                    <div class="experience-content">
+                        <div id="webzaa" class="content-panel active">
+                            <h3>Full-Stack Developer</h3>
+                            <h4><a href="https://webzaa.com/" target="_blank" rel="noopener noreferrer">@ Webzaa</a></h4>
+                            <p class="experience-date">Jun 2024 – Present • Mumbai, On-site</p>
+                            <ul>
+                                <li>Migrated internal PHP dashboard to Next.js + React + Node.js architecture.</li>
+                                <li>Built real-time Google Ads analytics dashboard using Google Ads API v24.</li>
+                                <li>Delivered 7+ production apps including real estate portals, PWAs, and blog CMS.</li>
+                                <li>Led 3-member team for Mumbai Homes WordPress platform deployment.</li>
+                                <li>Engineered heatmaps, session tracking, RBAC, and OTP login flows from scratch.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== 5. PROJECTS SECTION =========== -->
+        <section id="projects" class="projects-section" style="padding-top: 4rem; padding-bottom: 3rem; text-align: center;">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="project-tabs">
+                <button class="project-tab-btn active" data-filter="all">All</button>
+                <button class="project-tab-btn" data-filter="professional">Professional</button>
+                <button class="project-tab-btn" data-filter="personal">Personal</button>
+                <button class="project-tab-btn" data-filter="academic">Academic</button>
+            </div>
+
+            <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 2rem auto 0;">
+                
+                <!-- Google & Meta Ads Dashboard -->
+                <div class="project-card experience-card project-item" data-category="professional" style="text-align: left; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; justify-content: space-between;">
+                    <div>
+                        <div class="project-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                            <div class="project-icon" style="background: rgba(128,128,128,0.1); padding: 0.5rem; border-radius: 8px;"><i class="fas fa-chart-line" style="font-size: 1.2rem;"></i></div>
+                            <div class="project-links"><span class="project-label"><i class="fas fa-lock" style="font-size: 0.7rem;"></i> Private</span></div>
+                        </div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Google & Meta Ads Dashboard</h4>
+                        <p style="font-size: 0.95rem; opacity: 0.9; margin-bottom: 1rem;">Real-time ad analytics integrating Google Ads API v24 — tracks Spend, CTR, CPL, Qualified Leads and syncs campaign data to CRM records.</p>
+                    </div>
+                    <div class="tech-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span class="pill-tag badge-professional">Professional</span>
+                        <span class="pill-tag">PHP</span><span class="pill-tag">Google Ads API</span><span class="pill-tag">OAuth2</span><span class="pill-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- PropIQ Real Estate -->
+                <div class="project-card experience-card project-item" data-category="professional" style="text-align: left; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; justify-content: space-between;">
+                    <div>
+                        <div class="project-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                            <div class="project-icon" style="background: rgba(128,128,128,0.1); padding: 0.5rem; border-radius: 8px;"><i class="far fa-building" style="font-size: 1.2rem;"></i></div>
+                            <div class="project-links"><span class="project-label"><i class="fas fa-lock" style="font-size: 0.7rem;"></i> Private</span></div>
+                        </div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">PropIQ — Real Estate Platform</h4>
+                        <p style="font-size: 0.95rem; opacity: 0.9; margin-bottom: 1rem;">Browse developers, projects and reviews. Puppeteer auto-scrapes Google Maps for address, coordinates and ratings. Full admin CMS.</p>
+                    </div>
+                    <div class="tech-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span class="pill-tag badge-professional">Professional</span>
+                        <span class="pill-tag">Next.js</span><span class="pill-tag">Express.js</span><span class="pill-tag">Prisma</span><span class="pill-tag">Puppeteer</span>
+                    </div>
+                </div>
+
+                <!-- HOH CP App PWA -->
+                <div class="project-card experience-card project-item" data-category="professional" style="text-align: left; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; justify-content: space-between;">
+                    <div>
+                        <div class="project-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                            <div class="project-icon" style="background: rgba(128,128,128,0.1); padding: 0.5rem; border-radius: 8px;"><i class="far fa-bell" style="font-size: 1.2rem;"></i></div>
+                            <div class="project-links"><span class="project-label"><i class="fas fa-lock" style="font-size: 0.7rem;"></i> Private</span></div>
+                        </div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">HOH CP App — Community PWA</h4>
+                        <p style="font-size: 0.95rem; opacity: 0.9; margin-bottom: 1rem;">Ongoing PWA with Laravel CMS. Added push notification redirect, in-app image pop-up, and impression/click tracking.</p>
+                    </div>
+                    <div class="tech-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span class="pill-tag badge-professional">Professional</span>
+                        <span class="pill-tag">PHP</span><span class="pill-tag">Laravel MVC</span><span class="pill-tag">PWA</span><span class="pill-tag">Push Notifications</span>
+                    </div>
+                </div>
+
+                <!-- Parshva Connect PWA -->
+                <div class="project-card experience-card project-item" data-category="professional" style="text-align: left; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; justify-content: space-between;">
+                    <div>
+                        <div class="project-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                            <div class="project-icon" style="background: rgba(128,128,128,0.1); padding: 0.5rem; border-radius: 8px;"><i class="fas fa-om" style="font-size: 1.2rem;"></i></div>
+                            <div class="project-links"><span class="project-label"><i class="fas fa-lock" style="font-size: 0.7rem;"></i> Private</span></div>
+                        </div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Parshva Connect — Temple PWA</h4>
+                        <p style="font-size: 0.95rem; opacity: 0.9; margin-bottom: 1rem;">Community PWA for a Jain temple with Jain calendar, events, media upload requests, dashboard and a Laravel CMS for admins.</p>
+                    </div>
+                    <div class="tech-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span class="pill-tag badge-professional">Professional</span>
+                        <span class="pill-tag">PHP</span><span class="pill-tag">Laravel MVC</span><span class="pill-tag">PWA</span><span class="pill-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Mumbai Homes -->
+                <div class="project-card experience-card project-item" data-category="professional" style="text-align: left; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; justify-content: space-between;">
+                    <div>
+                        <div class="project-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                            <div class="project-icon" style="background: rgba(128,128,128,0.1); padding: 0.5rem; border-radius: 8px;"><i class="far fa-list-alt" style="font-size: 1.2rem;"></i></div>
+                            <div class="project-links"><span class="project-label"><i class="fas fa-lock" style="font-size: 0.7rem;"></i> Private</span></div>
+                        </div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Mumbai Homes — Blog Platform</h4>
+                        <p style="font-size: 0.95rem; opacity: 0.9; margin-bottom: 1rem;">Led a 3-member team to build a dynamic WordPress blog. Built per-post ad management so admins can set different creatives per article.</p>
+                    </div>
+                    <div class="tech-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span class="pill-tag badge-professional">Professional</span>
+                        <span class="pill-tag">WordPress</span><span class="pill-tag">ACF</span><span class="pill-tag">PHP</span><span class="pill-tag">Team Lead</span>
+                    </div>
+                </div>
+
+                <!-- Breathe - Smoking Tracker (Personal) -->
+                <div class="project-card experience-card project-item" data-category="personal" style="text-align: left; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; justify-content: space-between;">
+                    <div>
+                        <div class="project-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                            <div class="project-icon" style="background: rgba(128,128,128,0.1); padding: 0.5rem; border-radius: 8px;"><i class="fas fa-lungs" style="font-size: 1.2rem;"></i></div>
+                            <div class="project-links">
+                                <a href="https://breathe-c3ta.onrender.com/" target="_blank" class="project-label project-link-btn"><i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i> Live</a>
+                                <a href="#" target="_blank" class="project-label project-link-btn"><i class="fab fa-github" style="font-size: 0.7rem;"></i> Code</a>
+                            </div>
+                        </div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Breathe — Smoking Tracker</h4>
+                        <p style="font-size: 0.95rem; opacity: 0.9; margin-bottom: 1rem;">Personal health app to track quit-smoking progress. Daily log via calendar, streak counters, and a dashboard showing money saved and days clean.</p>
+                    </div>
+                    <div class="tech-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span class="pill-tag badge-personal">Personal</span>
+                        <span class="pill-tag">Next.js</span><span class="pill-tag">MongoDB</span><span class="pill-tag">App Router</span><span class="pill-tag">API Routes</span>
+                    </div>
+                </div>
+
+                <!-- PriceWar -->
+                <div class="project-card experience-card project-item" data-category="academic" style="text-align: left; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; justify-content: space-between;">
+                    <div>
+                        <div class="project-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                            <div class="project-icon" style="background: rgba(128,128,128,0.1); padding: 0.5rem; border-radius: 8px;"><i class="fas fa-chart-area" style="font-size: 1.2rem;"></i></div>
+                            <div class="project-links"><span class="project-label"><i class="fas fa-file-alt" style="font-size: 0.7rem;"></i> Paper</span></div>
+                        </div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">PriceWar — Price Prediction</h4>
+                        <p style="font-size: 0.95rem; opacity: 0.9; margin-bottom: 1rem;">Scraped real-time prices from e-commerce platforms and trained ML regression models to forecast product price trends. Published in IJRASET 2025.</p>
+                    </div>
+                    <div class="tech-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span class="pill-tag badge-academic">Academic</span>
+                        <span class="pill-tag">Python</span><span class="pill-tag">Flask</span><span class="pill-tag">scikit-learn</span><span class="pill-tag">Published</span>
+                    </div>
+                </div>
+
+                <!-- Library Management System -->
+                <div class="project-card experience-card project-item" data-category="academic" style="text-align: left; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; justify-content: space-between;">
+                    <div>
+                        <div class="project-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                            <div class="project-icon" style="background: rgba(128,128,128,0.1); padding: 0.5rem; border-radius: 8px;"><i class="fas fa-book" style="font-size: 1.2rem;"></i></div>
+                            <div class="project-links"><span class="project-label"><i class="fas fa-lock" style="font-size: 0.7rem;"></i> Private</span></div>
+                        </div>
+                        <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Library Management System</h4>
+                        <p style="font-size: 0.95rem; opacity: 0.9; margin-bottom: 1rem;">Web app automating library operations — inventory, book issuance tracking, returns — with RBAC for librarians and students.</p>
+                    </div>
+                    <div class="tech-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span class="pill-tag badge-academic">Academic</span>
+                        <span class="pill-tag">PHP</span><span class="pill-tag">MySQL</span><span class="pill-tag">RBAC</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =========== 6. PUBLICATION SECTION =========== -->
+        <section id="publication" class="publication-section" style="padding-top: 4rem; padding-bottom: 3rem; text-align: center;">
+            <h2 class="section-title">Publication</h2>
+            <div class="experience-card" style="text-align: left; padding: 2rem;">
+                <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.5rem;">PriceWar — Web Scraped Price Prediction System</h3>
+                <p style="margin-bottom: 0.5rem;"><strong>Published in IJRASET (Feb 2025)</strong> • Peer-reviewed • Indexed</p>
+                <p style="margin-bottom: 1rem;">DOI: <a href="https://doi.org/10.22214/ijraset.2025.66915" target="_blank" style="color: var(--button-bg-color); text-decoration: none;">10.22214/ijraset.2025.66915</a></p>
+                <p style="opacity: 0.9; line-height: 1.6;">Published research paper on architecting a full-stack price intelligence platform that scraped real-time product pricing from multiple e-commerce platforms. Evaluated ML regression models to forecast future product prices from historical datasets.</p>
+            </div>
+        </section>
+
+        <!-- =========== 7. EDUCATION SECTION =========== -->
+        <section id="education" class="education-section" style="padding-top: 4rem; padding-bottom: 3rem; text-align: center;">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                <div class="experience-card" style="text-align: left; padding: 2rem;">
+                    <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 0.5rem;">M.Sc. Information Technology</h3>
+                    <h4 style="font-size: 1rem; font-weight: 500; margin-bottom: 1rem; opacity: 0.8;">Kishinchand Chellaram College</h4>
+                    <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 1rem;">Aug 2023 – Apr 2025 • Mumbai</p>
+                    <p style="font-weight: 500;">CGPA: 9.55 </p>
+                </div>
+                <div class="experience-card" style="text-align: left; padding: 2rem;">
+                    <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 0.5rem;">B.Sc. Information Technology</h3>
+                    <h4 style="font-size: 1rem; font-weight: 500; margin-bottom: 1rem; opacity: 0.8;">Kirti M. Doongursee College</h4>
+                    <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 1rem;">Aug 2020 – Apr 2023 • Mumbai</p>
+                    <p style="font-weight: 500;">CGPA: 9.12 </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== 8. CONTACT SECTION =========== -->
+        <section id="contact" class="contact-section" style="padding-top: 4rem; padding-bottom: 6rem; text-align: center;">
+            <h2 class="section-title">Contact</h2>
+            <div class="experience-card" style="max-width: 800px; padding: 3rem 2rem;">
+                <h3 style="font-size: 2rem; margin-bottom: 1rem; font-weight: 600;">Let's Connect!</h3>
+                <p style="font-size: 1.1rem; line-height: 1.6; opacity: 0.9; margin-bottom: 2rem;">
+                    Currently building proprietary tools at Webzaa, but my inbox is always open. 
+                    Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                </p>
+                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <a href="mailto:manishapanigrahy313@gmail.com" class="cta-button" style="z-index: 2; position: relative;">Say Hello</a>
+                    <a href="https://linkedin.com/in/manishapanigrahy" target="_blank" class="cta-button outline-button" style="z-index: 2; position: relative;">LinkedIn</a>
+                    <a href="https://github.com/manishapanigrahy" target="_blank" class="cta-button outline-button" style="z-index: 2; position: relative;">GitHub</a>
+                </div>
+            </div>
+        </section>
     </div>
-  </footer>
 
-  <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
